@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { NavLink, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+	<div className='app'>
+        	<h1>React Router Demo</h1>
+        	<Navigation />
+        	<Main />
+      	</div>
+);
+
+const Navigation = () => (
+	<nav>
+		<ul>
+			<NavLink to='/birthchart'>Next</NavLink>
+		</ul>
+	</nav>
+);
+
+const Birth = () =>
+<div className='birth'>
+	<h1> Please Enter Your Date & Time of Birth </h1>
+	<p> some nonsense </p>
+	<p> etc </p>
+</div>
+
+const Main = () => (
+	<Route path='/birthchart' component={Birth}></Route>
+);
+
 
 export default App;

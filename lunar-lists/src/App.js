@@ -3,16 +3,24 @@ import './App.css';
 import { NavLink, Route } from 'react-router-dom';
 import { Button } from 'antd';
 import logo from './resources/LunarLists.png';
+import background from './resources/background.png';
+import './index.css'
 
-const App = () => (
-	<div className='app' align='center'>
-		<h1>Welcome to Lunar Lists </h1>
-		<img src={logo} alt={"logo"} height='100' width='150'/>
-		<h2>Wholesome recommendations for your day...based on your birth chart</h2>
-        	<Navigation/>
-        	<Main/>
-      	</div>
-);
+
+const App = () => (	
+		<div className="parent">
+			<div className="bg"></div>
+			<div className='app' align='center'>
+				<h1>Welcome to Lunar Lists </h1>
+
+				<img src={logo} alt={"logo"} height='100' width='150'/>
+
+				<h2>Wholesome recommendations for your day...based on your birth chart</h2>
+        			<Navigation/>
+        			<Main/>
+      			</div>
+		</div>
+);	
 
 const Navigation = () => (
 	<nav>

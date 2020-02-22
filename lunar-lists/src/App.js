@@ -5,10 +5,9 @@ import { Button } from 'antd';
 import logo from './resources/LunarLists.png';
 
 const App = () => (
-	<div className='app'>
-		<img src={logo} alt={"logo"} />
-
-        	<h1>Lunar Lists</h1>
+	<div className='app' align='center'>
+		<h1>Welcome to Lunar Lists </h1>
+		<img src={logo} alt={"logo"} height='100' width='150'/>
 		<h2>Wholesome recommendations for your day...based on your birth chart</h2>
         	<Navigation/>
         	<Main/>

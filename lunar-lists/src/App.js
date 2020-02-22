@@ -10,9 +10,9 @@ import './index.css'
 class App extends Component {
    render() {
       return (
-			<div className="parent">
-			  <div className="bg"></div>
-			    <div className='app' align='center'>
+	<div className="parent">
+		 <div className="bg"></div>
+		 <div className='app' align='center'>
 				    <h1>Welcome to Lunar Lists </h1>
 
 				    <img src={logo} alt={"logo"} height='100' width='150'/>
@@ -26,8 +26,7 @@ class App extends Component {
 			        </Switch>
 		        </BrowserRouter>
       	</div>
-       </div>
-       </div>
+	 </div>
       );	
    }
 }

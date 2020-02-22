@@ -29,4 +29,5 @@ const Main = () => (
 	<Route path='/birthchart' component={Birth}></Route>
 );
 
+
 export default App;

@@ -1,21 +1,47 @@
+
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+  	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    	sans-serif;
+
+  	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    	monospace;
+	color: white;
 }
 
+
+.app {
+	color: white;
+	left: 0;
+    	line-height: 70px;
+    	margin-top: -50px;
+    	position: absolute;
+    	text-align: center;
+    	top: 30%;
+    	width: 100%;
+	text-shadow: 0 0 30px #FFFFFF;
+
+}
+
+h1 {
+	font-size:40px;
+ 	text-shadow: 0 0 30px #FFFFFF;
+}
+
+
+
 .bg {
-background-image: url("./resources/background.png");
-height: 100vh;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+	background-image: url("./resources/background.png");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

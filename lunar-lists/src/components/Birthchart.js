@@ -1,11 +1,10 @@
 import React from 'react';
+import Login from './login/login'
 
 const Birthchart = () => {
 	return (
 		<div className='birth'>
-			<h1> Please Enter Your Date & Time of Birth </h1>
-			<p> some nonsense </p>
-			<p> etc </p>
+			<Login/>
 		</div>
 	);
 }
